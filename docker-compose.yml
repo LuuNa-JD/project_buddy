@@ -10,4 +10,4 @@ services:
       - EMAIL_PASSWORD=${EMAIL_PASSWORD}
     volumes:
       - .:/app
-    restart: always
+    restart: no
