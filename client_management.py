@@ -136,7 +136,7 @@ class ClientManagement(commands.Cog):
             await ctx.send("Temps écoulé ou erreur. Veuillez réessayer.")
             if ctx.author.id in self.client_creation_data:
                 del self.client_creation_data[ctx.author.id]
-            print(e)
+            print(f"Erreur lors de l'exécution de la commande : {e}")
 
     @commands.Cog.listener()
     async def on_member_join(self, member):

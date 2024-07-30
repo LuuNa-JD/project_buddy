@@ -1,10 +1,12 @@
 import sqlite3
 
+print("Connecting to database...")
 # Créez une connexion à la base de données
 conn = sqlite3.connect('clients.db')
 c = conn.cursor()
 
-# Créez la table pour stocker les informations des clients
+
+print("Creating table if not exists...")
 c.execute('''
           CREATE TABLE IF NOT EXISTS clients
           (id INTEGER PRIMARY KEY,
@@ -19,4 +21,5 @@ c.execute('''
           ''')
 
 conn.commit()
+print("Database setup completed successfully.")
 conn.close()
