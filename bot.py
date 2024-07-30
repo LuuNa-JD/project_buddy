@@ -18,6 +18,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 async def main():
     async with bot:
         await bot.load_extension('client_management')
+        await bot.load_extension('news_scraper')
         await bot.start(DISCORD_TOKEN)
 
 # Démarrer le bot

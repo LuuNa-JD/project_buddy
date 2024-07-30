@@ -20,6 +20,15 @@ c.execute('''
           visio_date TEXT)
           ''')
 
+print("Creating articles table if not exists...")
+c.execute('''
+          CREATE TABLE IF NOT EXISTS articles
+          (id INTEGER PRIMARY KEY,
+          title TEXT,
+          url TEXT UNIQUE,
+          summary TEXT)
+          ''')
+
 conn.commit()
 print("Database setup completed successfully.")
 conn.close()
