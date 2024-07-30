@@ -8,6 +8,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN python /app/database_setup.py
+RUN python3 /app/database_setup.py
 
-CMD ["python", "bot.py"]
+CMD ["python3", "bot.py"]
