@@ -8,5 +8,5 @@ services:
       - EMAIL_SENDER=${EMAIL_SENDER}
       - EMAIL_PASSWORD=${EMAIL_PASSWORD}
     volumes:
-      - .:/app
+      - /app
     restart: always
