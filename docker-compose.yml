@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  discord-bot-buddy:
+    build: .
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - EMAIL_SENDER=${EMAIL_SENDER}
+      - EMAIL_PASSWORD=${EMAIL_PASSWORD}
+    volumes:
+      - .:/app
+    restart: always
