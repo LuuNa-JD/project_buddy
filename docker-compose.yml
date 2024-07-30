@@ -4,7 +4,6 @@ services:
   discord-bot-buddy:
     build:
       context: .
-      pull_policy: build
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
       - EMAIL_SENDER=${EMAIL_SENDER}
