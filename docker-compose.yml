@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   discord-bot-buddy:
-    build: .
+    build:
+      context: .
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
       - EMAIL_SENDER=${EMAIL_SENDER}
