@@ -49,7 +49,7 @@ def scrape_articles(keywords):
         "https://www.socialbakers.com",
         "https://www.socialmediaweek.org",
         "https://www.socialmediatoday.com",
-        "https://www.neurosciencemarketing.com/blog"
+        "https://www.neurosciencemarketing.com/blog",
         "https://blog.hubspot.com"
         # Ajoutez d'autres sites ici
     ]
