@@ -11,3 +11,4 @@ yarl==1.9.4
 SQLAlchemy==1.4.25
 beautifulsoup4==4.10.0
 requests==2.26.0
+sqlite3==3.37.0
